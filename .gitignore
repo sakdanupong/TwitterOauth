@@ -1,0 +1,6 @@
+.DS_Store
+xcuserdata
+*.xcworkspace
+Molome/Molome.xcodeproj/*.mode1v3
+Molome/Molome.xcodeproj/*.pbxuser
+Molome/build/

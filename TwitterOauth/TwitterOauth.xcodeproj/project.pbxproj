@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1810C720196FF3FC00AD3D2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C71C196FF3FC00AD3D2F /* AppDelegate.m */; };
+		1810C721196FF3FC00AD3D2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C71F196FF3FC00AD3D2F /* ViewController.m */; };
+		1810C738196FF5E900AD3D2F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C725196FF5E900AD3D2F /* AFHTTPRequestOperation.m */; };
+		1810C739196FF5E900AD3D2F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C727196FF5E900AD3D2F /* AFHTTPRequestOperationManager.m */; };
+		1810C73A196FF5E900AD3D2F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C729196FF5E900AD3D2F /* AFHTTPSessionManager.m */; };
+		1810C73B196FF5E900AD3D2F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C72C196FF5E900AD3D2F /* AFNetworkReachabilityManager.m */; };
+		1810C73C196FF5E900AD3D2F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C72E196FF5E900AD3D2F /* AFSecurityPolicy.m */; };
+		1810C73D196FF5E900AD3D2F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C730196FF5E900AD3D2F /* AFURLConnectionOperation.m */; };
+		1810C73E196FF5E900AD3D2F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C732196FF5E900AD3D2F /* AFURLRequestSerialization.m */; };
+		1810C73F196FF5E900AD3D2F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C734196FF5E900AD3D2F /* AFURLResponseSerialization.m */; };
+		1810C740196FF5E900AD3D2F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C736196FF5E900AD3D2F /* AFURLSessionManager.m */; };
+		1810C74F196FF87E00AD3D2F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C747196FF87E00AD3D2F /* Base64.m */; };
+		1810C750196FF87E00AD3D2F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C749196FF87E00AD3D2F /* NSData+Base64.m */; };
+		1810C751196FF87E00AD3D2F /* OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C74B196FF87E00AD3D2F /* OAuth.m */; };
+		1810C752196FF87E00AD3D2F /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C74E196FF87E00AD3D2F /* StringUtil.m */; };
+		1810C75D196FFA4200AD3D2F /* ViewTwitterOauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C75C196FFA4200AD3D2F /* ViewTwitterOauth.m */; };
+		1810C760196FFA7000AD3D2F /* TwitterOauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C75F196FFA7000AD3D2F /* TwitterOauth.m */; };
+		1810C764196FFB3D00AD3D2F /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C763196FFB3D00AD3D2F /* TwitterViewController.m */; };
+		1810C768196FFD9800AD3D2F /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 1810C767196FFD9800AD3D2F /* API.m */; };
 		18725E16196FB47F00068271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18725E15196FB47F00068271 /* Foundation.framework */; };
 		18725E18196FB47F00068271 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18725E17196FB47F00068271 /* CoreGraphics.framework */; };
 		18725E1A196FB47F00068271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18725E19196FB47F00068271 /* UIKit.framework */; };
 		18725E20196FB47F00068271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18725E1E196FB47F00068271 /* InfoPlist.strings */; };
 		18725E22196FB47F00068271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18725E21196FB47F00068271 /* main.m */; };
-		18725E26196FB47F00068271 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18725E25196FB47F00068271 /* AppDelegate.m */; };
 		18725E29196FB47F00068271 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18725E27196FB47F00068271 /* Main_iPhone.storyboard */; };
 		18725E2C196FB47F00068271 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18725E2A196FB47F00068271 /* Main_iPad.storyboard */; };
-		18725E2F196FB47F00068271 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18725E2E196FB47F00068271 /* ViewController.m */; };
 		18725E31196FB47F00068271 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18725E30196FB47F00068271 /* Images.xcassets */; };
 		18725E38196FB47F00068271 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18725E37196FB47F00068271 /* XCTest.framework */; };
 		18725E39196FB47F00068271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18725E15196FB47F00068271 /* Foundation.framework */; };
@@ -35,6 +52,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1810C71B196FF3FC00AD3D2F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1810C71C196FF3FC00AD3D2F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1810C71E196FF3FC00AD3D2F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1810C71F196FF3FC00AD3D2F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1810C724196FF5E900AD3D2F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		1810C725196FF5E900AD3D2F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		1810C726196FF5E900AD3D2F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		1810C727196FF5E900AD3D2F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		1810C728196FF5E900AD3D2F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		1810C729196FF5E900AD3D2F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1810C72A196FF5E900AD3D2F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		1810C72B196FF5E900AD3D2F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		1810C72C196FF5E900AD3D2F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		1810C72D196FF5E900AD3D2F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		1810C72E196FF5E900AD3D2F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		1810C72F196FF5E900AD3D2F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		1810C730196FF5E900AD3D2F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		1810C731196FF5E900AD3D2F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		1810C732196FF5E900AD3D2F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		1810C733196FF5E900AD3D2F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		1810C734196FF5E900AD3D2F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		1810C735196FF5E900AD3D2F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		1810C736196FF5E900AD3D2F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		1810C746196FF87E00AD3D2F /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		1810C747196FF87E00AD3D2F /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		1810C748196FF87E00AD3D2F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1810C749196FF87E00AD3D2F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1810C74A196FF87E00AD3D2F /* OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth.h; sourceTree = "<group>"; };
+		1810C74B196FF87E00AD3D2F /* OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth.m; sourceTree = "<group>"; };
+		1810C74D196FF87E00AD3D2F /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		1810C74E196FF87E00AD3D2F /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		1810C75B196FFA4200AD3D2F /* ViewTwitterOauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTwitterOauth.h; sourceTree = "<group>"; };
+		1810C75C196FFA4200AD3D2F /* ViewTwitterOauth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTwitterOauth.m; sourceTree = "<group>"; };
+		1810C75E196FFA7000AD3D2F /* TwitterOauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterOauth.h; sourceTree = "<group>"; };
+		1810C75F196FFA7000AD3D2F /* TwitterOauth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterOauth.m; sourceTree = "<group>"; };
+		1810C762196FFB3D00AD3D2F /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		1810C763196FFB3D00AD3D2F /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		1810C766196FFD9800AD3D2F /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		1810C767196FFD9800AD3D2F /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		18725E12196FB47F00068271 /* TwitterOauth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterOauth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18725E15196FB47F00068271 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18725E17196FB47F00068271 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,12 +99,8 @@
 		18725E1F196FB47F00068271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18725E21196FB47F00068271 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18725E23196FB47F00068271 /* TwitterOauth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterOauth-Prefix.pch"; sourceTree = "<group>"; };
-		18725E24196FB47F00068271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		18725E25196FB47F00068271 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18725E28196FB47F00068271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		18725E2B196FB47F00068271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		18725E2D196FB47F00068271 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18725E2E196FB47F00068271 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18725E30196FB47F00068271 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18725E36196FB47F00068271 /* TwitterOauthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterOauthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18725E37196FB47F00068271 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -81,6 +133,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1810C71A196FF3FC00AD3D2F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1810C71B196FF3FC00AD3D2F /* AppDelegate.h */,
+				1810C71C196FF3FC00AD3D2F /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1810C71D196FF3FC00AD3D2F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1810C71E196FF3FC00AD3D2F /* ViewController.h */,
+				1810C71F196FF3FC00AD3D2F /* ViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1810C722196FF5E900AD3D2F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1810C75A196FFA4200AD3D2F /* TwitterOauth */,
+				1810C723196FF5E900AD3D2F /* AFNetworking */,
+				1810C744196FF87E00AD3D2F /* OAuth */,
+				1810C74C196FF87E00AD3D2F /* StringUtil */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		1810C723196FF5E900AD3D2F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1810C724196FF5E900AD3D2F /* AFHTTPRequestOperation.h */,
+				1810C725196FF5E900AD3D2F /* AFHTTPRequestOperation.m */,
+				1810C726196FF5E900AD3D2F /* AFHTTPRequestOperationManager.h */,
+				1810C727196FF5E900AD3D2F /* AFHTTPRequestOperationManager.m */,
+				1810C728196FF5E900AD3D2F /* AFHTTPSessionManager.h */,
+				1810C729196FF5E900AD3D2F /* AFHTTPSessionManager.m */,
+				1810C72A196FF5E900AD3D2F /* AFNetworking.h */,
+				1810C72B196FF5E900AD3D2F /* AFNetworkReachabilityManager.h */,
+				1810C72C196FF5E900AD3D2F /* AFNetworkReachabilityManager.m */,
+				1810C72D196FF5E900AD3D2F /* AFSecurityPolicy.h */,
+				1810C72E196FF5E900AD3D2F /* AFSecurityPolicy.m */,
+				1810C72F196FF5E900AD3D2F /* AFURLConnectionOperation.h */,
+				1810C730196FF5E900AD3D2F /* AFURLConnectionOperation.m */,
+				1810C731196FF5E900AD3D2F /* AFURLRequestSerialization.h */,
+				1810C732196FF5E900AD3D2F /* AFURLRequestSerialization.m */,
+				1810C733196FF5E900AD3D2F /* AFURLResponseSerialization.h */,
+				1810C734196FF5E900AD3D2F /* AFURLResponseSerialization.m */,
+				1810C735196FF5E900AD3D2F /* AFURLSessionManager.h */,
+				1810C736196FF5E900AD3D2F /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1810C744196FF87E00AD3D2F /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1810C745196FF87E00AD3D2F /* base64 */,
+				1810C74A196FF87E00AD3D2F /* OAuth.h */,
+				1810C74B196FF87E00AD3D2F /* OAuth.m */,
+			);
+			name = OAuth;
+			path = TwitterOauth/libs/OAuth;
+			sourceTree = SOURCE_ROOT;
+		};
+		1810C745196FF87E00AD3D2F /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				1810C746196FF87E00AD3D2F /* Base64.h */,
+				1810C747196FF87E00AD3D2F /* Base64.m */,
+				1810C748196FF87E00AD3D2F /* NSData+Base64.h */,
+				1810C749196FF87E00AD3D2F /* NSData+Base64.m */,
+			);
+			path = base64;
+			sourceTree = "<group>";
+		};
+		1810C74C196FF87E00AD3D2F /* StringUtil */ = {
+			isa = PBXGroup;
+			children = (
+				1810C74D196FF87E00AD3D2F /* StringUtil.h */,
+				1810C74E196FF87E00AD3D2F /* StringUtil.m */,
+			);
+			name = StringUtil;
+			path = TwitterOauth/libs/StringUtil;
+			sourceTree = SOURCE_ROOT;
+		};
+		1810C75A196FFA4200AD3D2F /* TwitterOauth */ = {
+			isa = PBXGroup;
+			children = (
+				1810C75B196FFA4200AD3D2F /* ViewTwitterOauth.h */,
+				1810C75C196FFA4200AD3D2F /* ViewTwitterOauth.m */,
+				1810C75E196FFA7000AD3D2F /* TwitterOauth.h */,
+				1810C75F196FFA7000AD3D2F /* TwitterOauth.m */,
+			);
+			path = TwitterOauth;
+			sourceTree = "<group>";
+		};
+		1810C761196FFB1300AD3D2F /* ViewTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				1810C762196FFB3D00AD3D2F /* TwitterViewController.h */,
+				1810C763196FFB3D00AD3D2F /* TwitterViewController.m */,
+			);
+			path = ViewTwitter;
+			sourceTree = "<group>";
+		};
+		1810C765196FFD7700AD3D2F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1810C766196FFD9800AD3D2F /* API.h */,
+				1810C767196FFD9800AD3D2F /* API.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		18725E09196FB47F00068271 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +282,13 @@
 		18725E1B196FB47F00068271 /* TwitterOauth */ = {
 			isa = PBXGroup;
 			children = (
-				18725E24196FB47F00068271 /* AppDelegate.h */,
-				18725E25196FB47F00068271 /* AppDelegate.m */,
+				1810C722196FF5E900AD3D2F /* libs */,
+				1810C761196FFB1300AD3D2F /* ViewTwitter */,
+				1810C765196FFD7700AD3D2F /* Manager */,
+				1810C71A196FF3FC00AD3D2F /* AppDelegate */,
+				1810C71D196FF3FC00AD3D2F /* VC */,
 				18725E27196FB47F00068271 /* Main_iPhone.storyboard */,
 				18725E2A196FB47F00068271 /* Main_iPad.storyboard */,
-				18725E2D196FB47F00068271 /* ViewController.h */,
-				18725E2E196FB47F00068271 /* ViewController.m */,
 				18725E30196FB47F00068271 /* Images.xcassets */,
 				18725E1C196FB47F00068271 /* Supporting Files */,
 			);
@@ -253,9 +422,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18725E2F196FB47F00068271 /* ViewController.m in Sources */,
-				18725E26196FB47F00068271 /* AppDelegate.m in Sources */,
+				1810C74F196FF87E00AD3D2F /* Base64.m in Sources */,
+				1810C738196FF5E900AD3D2F /* AFHTTPRequestOperation.m in Sources */,
+				1810C750196FF87E00AD3D2F /* NSData+Base64.m in Sources */,
+				1810C751196FF87E00AD3D2F /* OAuth.m in Sources */,
+				1810C75D196FFA4200AD3D2F /* ViewTwitterOauth.m in Sources */,
+				1810C720196FF3FC00AD3D2F /* AppDelegate.m in Sources */,
+				1810C739196FF5E900AD3D2F /* AFHTTPRequestOperationManager.m in Sources */,
+				1810C73B196FF5E900AD3D2F /* AFNetworkReachabilityManager.m in Sources */,
+				1810C73F196FF5E900AD3D2F /* AFURLResponseSerialization.m in Sources */,
+				1810C764196FFB3D00AD3D2F /* TwitterViewController.m in Sources */,
+				1810C73D196FF5E900AD3D2F /* AFURLConnectionOperation.m in Sources */,
+				1810C73C196FF5E900AD3D2F /* AFSecurityPolicy.m in Sources */,
+				1810C73A196FF5E900AD3D2F /* AFHTTPSessionManager.m in Sources */,
+				1810C73E196FF5E900AD3D2F /* AFURLRequestSerialization.m in Sources */,
+				1810C768196FFD9800AD3D2F /* API.m in Sources */,
+				1810C760196FFA7000AD3D2F /* TwitterOauth.m in Sources */,
+				1810C740196FF5E900AD3D2F /* AFURLSessionManager.m in Sources */,
+				1810C752196FF87E00AD3D2F /* StringUtil.m in Sources */,
 				18725E22196FB47F00068271 /* main.m in Sources */,
+				1810C721196FF3FC00AD3D2F /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +656,7 @@
 				18725E49196FB47F00068271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18725E4A196FB47F00068271 /* Build configuration list for PBXNativeTarget "TwitterOauthTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +665,7 @@
 				18725E4C196FB47F00068271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
