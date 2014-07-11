@@ -316,6 +316,12 @@ extern NSString * const FHSErrorDomain;
 - (UIViewController *)loginController;
 - (UIViewController *)loginControllerWithCompletionHandler:(void(^)(BOOL success))block;
 
+
+// mod hack
+- (UIViewController *)loginControllerWithCompletionHandler:(void(^)(BOOL success))block showNavBar:(BOOL)showNavBar;
+// end mod hack
+
+
 // Access Token Mangement
 - (void)clearAccessToken;
 - (void)loadAccessToken;

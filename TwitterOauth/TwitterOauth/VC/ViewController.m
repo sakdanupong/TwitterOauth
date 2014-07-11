@@ -21,20 +21,21 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [[FHSTwitterEngine sharedEngine]permanentlySetConsumerKey:API_KEY andSecret:SECRET_KEY];
+    [[FHSTwitterEngine sharedEngine] permanentlySetConsumerKey:API_KEY andSecret:SECRET_KEY];
     [[FHSTwitterEngine sharedEngine] loadAccessToken];
     
     if ([[FHSTwitterEngine sharedEngine]isAuthorized]) {
         //[self postToTwitter];
         NSLog(@"isAuthorized");
     } else {
-
         UIViewController *loginController = [[FHSTwitterEngine sharedEngine]loginControllerWithCompletionHandler:^(BOOL success) {
-            [self postToTwitter];
-        }];
-        
+            if (success)
+                [self postToTwitter];
+        } showNavBar:YES];
         [self presentViewController:loginController animated:YES completion:nil];
     }
+ 
+    
     
 }
 

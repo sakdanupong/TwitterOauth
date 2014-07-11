@@ -240,7 +240,12 @@ id removeNull(id rootObject) {
 
 @end
 
-@interface FHSTwitterEngineController : UIViewController <UIWebViewDelegate> 
+@interface FHSTwitterEngineController : UIViewController <UIWebViewDelegate> {
+// mod hack
+@public
+    BOOL mIsShowNavBar;
+// end mod hack
+}
 
 @property (nonatomic, strong) UINavigationBar *navBar;
 @property (nonatomic, strong) UIWebView *theWebView;
@@ -2070,9 +2075,22 @@ id removeNull(id rootObject) {
 
 - (UIViewController *)loginControllerWithCompletionHandler:(void(^)(BOOL success))block {
     FHSTwitterEngineController *vc = [[FHSTwitterEngineController alloc]init];
+    // mod hack
+    vc->mIsShowNavBar = YES;
+    // end mod hack
     objc_setAssociatedObject(vc, "FHSTwitterEngineOAuthCompletion", block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     return vc;
 }
+
+// mod hack
+- (UIViewController *)loginControllerWithCompletionHandler:(void(^)(BOOL success))block showNavBar:(BOOL)showNavBar {
+    FHSTwitterEngineController *vc = [[FHSTwitterEngineController alloc]init];
+    vc->mIsShowNavBar = showNavBar;
+    objc_setAssociatedObject(vc, "FHSTwitterEngineOAuthCompletion", block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    return vc;
+}
+
+// end nod hack
 
 + (BOOL)isConnectedToInternet {
     struct sockaddr_in zeroAddress;
@@ -2135,11 +2153,17 @@ id removeNull(id rootObject) {
     self.view.backgroundColor = [UIColor lightGrayColor];
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    self.navBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, (UIDevice.currentDevice.systemVersion.floatValue >= 7.0f)?64:44)];
-    _navBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
-    UINavigationItem *navItem = [[UINavigationItem alloc]initWithTitle:@"Twitter Login"];
-	navItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(close)];
-	[_navBar pushNavigationItem:navItem animated:NO];
+    // mod hack
+    if (mIsShowNavBar) {
+    // end mod hack
+        self.navBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, (UIDevice.currentDevice.systemVersion.floatValue >= 7.0f)?64:44)];
+        _navBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
+        UINavigationItem *navItem = [[UINavigationItem alloc]initWithTitle:@"Twitter Login"];
+        navItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(close)];
+        [_navBar pushNavigationItem:navItem animated:NO];
+    // mod hack
+    }
+    // end mod hack
     
     self.theWebView = [[UIWebView alloc]initWithFrame:CGRectMake(0, _navBar.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height-_navBar.bounds.size.height)];
     _theWebView.hidden = YES;
